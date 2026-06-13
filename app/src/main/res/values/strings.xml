@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Solitaire</string>
+    <string name="new_game">New Game</string>
+    <string name="you_won">You Won!</string>
+    <string name="congratulations">Congratulations! You completed the game!</string>
+</resources>
