@@ -172,7 +172,7 @@ fun StockPile(
         contentAlignment = Alignment.Center
     ) {
         if (stock.isNotEmpty()) {
-            CardBack(cardWidth = cardWidth, cardHeight = cardHeight)
+            CardBackView(cardWidth = cardWidth, cardHeight = cardHeight)
         } else {
             // Empty stock — show recycle symbol
             EmptyPilePlaceholder(
@@ -330,7 +330,7 @@ fun TableauColumn(
                             onClick = { onCardTapped(CardLocation.Tableau(col, row)) }
                         )
                     } else {
-                        CardBack(
+                        CardBackView(
                             cardWidth = cardWidth,
                             cardHeight = cardHeight,
                             onClick = { onCardTapped(CardLocation.Tableau(col, row)) }
@@ -421,7 +421,7 @@ fun CardFace(
 }
 
 @Composable
-fun CardBack(
+fun CardBackView(
     cardWidth: Dp,
     cardHeight: Dp,
     onClick: (() -> Unit)? = null
